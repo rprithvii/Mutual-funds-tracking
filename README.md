@@ -1,58 +1,56 @@
-# 📈 Multi-Asset Performance Tracker
-> **A Comprehensive Dashboard for 200+ Mutual Funds, Global Indices, and Equities.**
-
-This project is a high-performance data tracking tool built to analyze and compare the growth trajectories of Indian Mutual Funds, Global ETFs, and Individual Stocks. It tracks everything from short-term daily movements to **35-year long-term CAGR**.
-
----
+# 📈 Multi-Asset Performance Tracker (Universal Benchmarking Tool)
+> **Solving the gaps in mainstream financial platforms by providing unbiased, long-term, and globalized data.**
 
 ## 🔗 Live Project Link
-Access the interactive dashboard here: 
-**[View Live Google Sheet](https://docs.google.com/spreadsheets/d/1StYqTB1gb-7e2UygN3SCRMWfRZvfkbYaqtOBp_MDgAI/edit?gid=1001243271#gid=1001243271)**
+**[View Interactive Dashboard (Google Sheets)](https://docs.google.com/spreadsheets/d/1StYqTB1gb-7e2UygN3SCRMWfRZvfkbYaqtOBp_MDgAI/edit?gid=1001243271#gid=1001243271)**
 
 ---
 
-## 🚀 Key Features
+## 🧐 Why I Built This (The Problem)
+While tracking mutual funds and global markets, I noticed several critical flaws in popular platforms like Moneycontrol, Paytm Money, and Groww:
 
-* **Multi-Timeframe Analysis:** Tracks performance across 1D, 1Y, 3Y, 5Y, 10Y, 20Y, and up to 35-year horizons.
-* **Automated CAGR Calculations:** Advanced formulas to calculate Compound Annual Growth Rates for long-term wealth assessment.
-* **Global Market Coverage:** * **India:** Nifty 50, Sensex, and specialized sectoral indices.
-    * **Global:** NASDAQ-100, S&P 500, Nikkei 225 (Japan), and US Tech giants.
-* **Mutual Fund Deep-Dive:** Tracking Expense Ratios, NAV, and performance for top AMC houses like Quant, Axis, HDFC, and Motilal Oswal.
-* **Stock Monitoring:** Focused tracking on high-growth potential stocks (e.g., Alphalogic Techsys, NVIDIA, Microsoft).
+1.  **Platform Bias:** Most apps feature "Sponsored Funds" at the top of their lists. Even when sorting by performance, these promoted funds clutter the view, making it hard to find the true winners.
+2.  **Missing "Very Long Term" Data:** Most retail platforms cap historical data at 5 or 10 years. For a true long-term investor, seeing the **15, 20, or 30-year CAGR** is vital to understanding how a fund survives different market cycles.
+3.  **Fragmented Tracking:** No single platform allows you to compare an Indian Small Cap fund directly against the NASDAQ-100 or a specialized European Index in one unified view.
+4.  **Currency Blindness:** To understand true global performance, you must view returns in **USD terms**. A 10% return in a local currency like the Lira (Turkey) or Yuan (China) might actually be a loss when adjusted for USD depreciation.
+
+---
+
+## 🚀 The Solution: A Unified Performance Engine
+This tracker centralizes 200+ assets into a single, unbiased dashboard with a focus on:
+
+* **Unbiased Ranking:** Zero sponsored listings. Funds are ranked purely on raw data and custom "Performance Scores."
+* **Deep Historical Context:** Tracks performance horizons up to **35 years**, allowing for multi-decade wealth analysis.
+* **Global Macro Comparison:** Compare the performance of diverse indices (Turkey, Hong Kong, China, India, Europe, UK, Germany) normalized in **USD terms** to see which markets are truly creating value.
+* **Cost vs. Performance:** Integrated **Expense Ratio** tracking to ensure that high performance isn't being eaten away by high fees.
 
 ---
 
 ## 📂 Sheet Architecture
 
-| Sheet Name | Purpose | Data Tracked |
+| Section | Focus Area | Unique Value |
 | :--- | :--- | :--- |
-| **Shares India** | Domestic Equity Tracking | PE Ratios, Growth Categories, Small-cap Analysis |
-| **Shares Global** | International Exposure | US Tech, Semiconductor ETFs, Global Indices |
-| **MFs Performance** | Fund Analysis | Direct vs. Regular, Expense Ratios, CAGR Benchmarking |
-| **Global Currencies** | Macro Analysis | USD/INR and JPY/INR impact on returns |
+| **MFs Performance** | Indian Mutual Funds | 15–35 year CAGR data not available on retail apps. |
+| **Shares Global** | International Indices | Comparison of China, HK, Europe, and US in USD terms. |
+| **Shares India** | Domestic Equity | Deep-dive into small-cap and "High Growth" categorized stocks. |
+| **Macro/FX** | Currency Impact | Tracking JPY, USD, and INR to adjust global returns. |
 
 ---
 
 ## 🛠 Technical Details
-
-The project utilizes **Google Finance API** to fetch real-time data and historical pricing.
-
-### Formula Sample (CAGR)
-For calculating the 5-year growth, the project uses:
-`=((Current_Price / Price_5_Years_Ago)^(1/5))-1`
+* **Engine:** Google Sheets
+* **Data Source:** Google Finance API & Historical NAV Archives
+* **Key Metric:** Custom CAGR (Compound Annual Growth Rate) calculated across 10+ timeframes.
 
 ---
 
-## 💡 How to Use This Tracker
-
-1.  **Filter by CAGR:** Use the filters on the 5Y or 10Y columns to find the most consistent wealth creators.
-2.  **Expense Ratio Check:** Compare the "Exp Ratio" column against performance to see if you are paying too much for underperforming funds.
-3.  **Benchmark Comparison:** Compare individual fund performance against the **Nifty 50** or **NASDAQ-100** columns to see if they are beating the market.
+## 📈 Sample Insight
+By using this tool, I identified that while certain "Popular" funds were trending on apps, their **20-year consistency** was significantly lower than quieter, index-beating funds that were buried by sponsored algorithms.
 
 ---
 
 ## ⚠️ Disclaimer
-*This tracker is for educational and research purposes only. Investing in mutual funds and stocks involves market risks. Always consult with a certified financial advisor before making investment decisions.*
+*This tracker is for educational and research purposes only. Investing involves market risks. Always consult with a certified financial advisor.*
 
 ---
-**Developed by [Prithvi Raj/rprithvii]** *Contributing to transparent financial data analysis.*
+**Developed by [Prithvi Raj]** | *Built for investors who value data over marketing.*
